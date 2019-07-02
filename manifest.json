@@ -13,8 +13,18 @@
         "default": "Ctrl+Shift+F",
         "mac": "MacCtrl+Shift+F"
       },
-      "description": "Opens hello.html"
+      "description": "Opens editing UI"
+    },
+
+    "pick_word":{
+      "suggested_key":{
+        "default": "Ctrl+Shift+Q",
+        "mac": "MacCtrl+Shift+Q"
+      },
+      "description": "Select word in current page"
     }
+
+
   },
   "permissions": [
     "<all_urls>",
