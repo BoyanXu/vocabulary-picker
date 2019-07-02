@@ -1,0 +1,31 @@
+{
+  "name": "Vocabulary Picker",
+  "description" : "Pick challenging and elegant vocabulary while reading",
+  "version": "1.0",
+  "browser_action": {
+    "default_popup": "UI-Editing.html",
+    "default_icon": "Assets/main-favicon.png"
+  },
+  "manifest_version": 2,
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Opens hello.html"
+    }
+  },
+  "permissions": [
+    "<all_urls>",
+    "tts",
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+
+}
