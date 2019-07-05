@@ -51,6 +51,8 @@ function saveVocabularyInfo(message) {
     alert("Current vocabulary info is : " + vocabularyInfo.vocabulary);
     if (vocabularyInfo !== null) {
         // var VocabularyList = JSON.parse(localStorage.vocabularyList);
+
+        // Store to local chrome
         chrome.storage.local.get(['VocabularyList'], (result) => {
             VocabularyList = result.VocabularyList;
             alert("latest local storage loaded, which is: " + JSON.stringify(VocabularyList));
@@ -58,7 +60,11 @@ function saveVocabularyInfo(message) {
             VocabularyList.push(vocabularyInfo);
             chrome.storage.local.set({'VocabularyList': VocabularyList }, () => { alert("Vocabulary local storage updated, which should be : " + JSON.stringify(VocabularyList)) })
         });
-        // localStorage.vocabularyList = JSON.stringify(VocabularyList)
+        // Store to current tab
+        vocabularyList4Tab = JSON.parse(localStorage.vocabularyList4Tab);
+        vocabularyInfo.index = vocabularyList4Tab.length;
+        vocabularyList4Tab.push(vocabularyInfo);
+        localStorage.vocabularyList4Tab = JSON.stringify(vocabularyList4Tab);
     }
 }
 
@@ -70,11 +76,11 @@ function initContentScript() {
         }
     });
 
-    // localStorage.vocabularyList = JSON.stringify([]);
+    localStorage.vocabularyList4Tab = JSON.stringify([]);
     try {
         chrome.storage.local.get(['VocabularyList'],(items) => {
-                alert('Settings retrieved', items);});
-    } catch (eor) { //
+            alert('Settings retrieved', items);});
+    } catch (eor) {
         alert(eor);
         chrome.storage.local.set({'VocabularyList': [] }, () => { alert("Vocabulary local storage initialized") } )
     }
