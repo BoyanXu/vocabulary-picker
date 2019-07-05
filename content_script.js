@@ -69,8 +69,17 @@ function initContentScript() {
             return true;
         }
     });
-    chrome.storage.local.set({'VocabularyList': [] }, () => { alert("Vocabulary local storage initialized") } )
+
+    // localStorage.vocabularyList = JSON.stringify([]);
+    try {
+        chrome.storage.local.get(['VocabularyList'],(items) => {
+                alert('Settings retrieved', items);});
+    } catch (eor) { //
+        alert(eor);
+        chrome.storage.local.set({'VocabularyList': [] }, () => { alert("Vocabulary local storage initialized") } )
+    }
     // chrome.runtime.sendMessage({'init': true}, onSelection);
 }
+
 
 initContentScript();
