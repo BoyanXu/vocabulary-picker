@@ -62,13 +62,6 @@ function saveVocabularyInfo(message) {
     }
 }
 
-// function onSelection(message, sender, sendResponse) {
-//     if (message === "save") {
-//         saveVocabularyInfo();
-//         return true;
-//     }
-// }
-
 function initContentScript() {
     chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         if (message.action === "save") {
@@ -77,22 +70,7 @@ function initContentScript() {
         }
     });
     chrome.storage.local.set({'VocabularyList': [] }, () => { alert("Vocabulary local storage initialized") } )
-    // localStorage.vocabularyList = JSON.stringify([]);
-
     // chrome.runtime.sendMessage({'init': true}, onSelection);
-    // let randint = Math.random();
-    // chrome.storage.sync.set({"random number": randint}, function() {
-    //   console.log('Random number is ' + randint);
-    // });
-    // chrome.storage.sync.get(["random number"], function(randint){
-    //   console.log("fetch from local storage: " + randint);
-    // });
-    // document.addEventListener('keydown', function(evt) {
-    //   if (!document.hasFocus()) {
-    //     return true;
-    //   }
-    //   return true;
-    // }, false);
 }
 
 initContentScript();

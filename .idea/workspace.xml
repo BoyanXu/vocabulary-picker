@@ -47,8 +47,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/content_script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+            <state relative-caret-position="1464">
+              <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -177,7 +177,7 @@
       <workItem from="1562074084244" duration="338000" />
       <workItem from="1562074445331" duration="2627000" />
       <workItem from="1562077106393" duration="6847000" />
-      <workItem from="1562314809762" duration="6359000" />
+      <workItem from="1562314809762" duration="6679000" />
     </task>
     <task id="LOCAL-00001" summary="Add Favicon: /Assets/main-favicon.png&#10;Add popup page: UI-Editing&#10;Add fake background.js&#10;Update manifest.json">
       <created>1562076727856</created>
@@ -225,7 +225,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16171000" />
+    <option name="totallyTimeSpent" value="16491000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -315,7 +315,8 @@
     <MESSAGE value="Add configure: ./manifest.json/.commands.pick_word" />
     <MESSAGE value="Add configure: ./manifest.json/.content_scripts" />
     <MESSAGE value="Polish naming in ./content_script.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Polish naming in ./content_script.js" />
+    <MESSAGE value="save selected vocabulary to chrome.storage.local" />
+    <option name="LAST_COMMIT_MESSAGE" value="save selected vocabulary to chrome.storage.local" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hello_extensions.png" />
@@ -376,8 +377,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/content_script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+        <state relative-caret-position="1464">
+          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
         </state>
       </provider>
     </entry>
