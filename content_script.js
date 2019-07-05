@@ -11,8 +11,8 @@ function getSelectedVocabulary(selectedNode) {
 }
 
 function getSelectedSentence(paragraph, vocabulary) {
-    sentences = paragraph.match(/[^\.!\?]+[\.!\?]+/g);
-    for (var index in sentences) {
+    let sentences = paragraph.match(/[^\.!\?]+[\.!\?]+/g);
+    for (var index in sentences) {   // TODO: check correctness
         sentence = sentences[index];
         if (sentence.includes(vocabulary)) {
             return sentence
@@ -46,30 +46,39 @@ function getSelectedInfo() {
     return new vocabularyInfo(selected_vocabulary, selected_sentence, selected_paragraph)
 }
 
-function saveSelection() {
+function saveVocabularyInfo(message) {
     let vocabularyInfo = getSelectedInfo();
-
-    if (vocabularyInfo == null) {   // handle exception 1: nothing selected
-        return null;
-    } else {
-        var VocabularyList = JSON.parse(localStorage.vocabularyList);
-        VocabularyList.push(vocabularyInfo);
-        localStorage.vocabularyList = JSON.stringify(VocabularyList)
+    alert("Current vocabulary info is : " + vocabularyInfo.vocabulary);
+    if (vocabularyInfo !== null) {
+        // var VocabularyList = JSON.parse(localStorage.vocabularyList);
+        chrome.storage.local.get(['VocabularyList'], (result) => {
+            VocabularyList = result.VocabularyList;
+            alert("latest local storage loaded, which is: " + JSON.stringify(VocabularyList));
+            vocabularyInfo.index = VocabularyList.length;
+            VocabularyList.push(vocabularyInfo);
+            chrome.storage.local.set({'VocabularyList': VocabularyList }, () => { alert("Vocabulary local storage updated, which should be : " + JSON.stringify(VocabularyList)) })
+        });
+        // localStorage.vocabularyList = JSON.stringify(VocabularyList)
     }
 }
 
-function onSelection(signal, sender, sendResponse) {
-    switch (signal.action) {
-        case 'save':
-            saveSelection();
-            return true;
-    }
-}
+// function onSelection(message, sender, sendResponse) {
+//     if (message === "save") {
+//         saveVocabularyInfo();
+//         return true;
+//     }
+// }
 
 function initContentScript() {
-    chrome.runtime.onMessage.addListener(onSelection);
-    // initialize the vocabularyList
-    localStorage.vocabularyList = JSON.stringify([]);
+    chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+        if (message.action === "save") {
+            saveVocabularyInfo();
+            return true;
+        }
+    });
+    chrome.storage.local.set({'VocabularyList': [] }, () => { alert("Vocabulary local storage initialized") } )
+    // localStorage.vocabularyList = JSON.stringify([]);
+
     // chrome.runtime.sendMessage({'init': true}, onSelection);
     // let randint = Math.random();
     // chrome.storage.sync.set({"random number": randint}, function() {
