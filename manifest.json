@@ -3,8 +3,9 @@
   "description" : "Pick challenging and elegant vocabulary while reading",
   "version": "1.0",
   "browser_action": {
-    "default_popup": "UI-Editing.html",
-    "default_icon": "Assets/main-favicon.png"
+    "default_popup": "UI-Edit.html",
+    "default_title": "Vocabulary Picker",
+    "default_icon": "images/main-favicon.png"
   },
   "manifest_version": 2,
   "commands": {

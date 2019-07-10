@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/content_script.js" line="60" />
+    <bookmark url="file://$PROJECT_DIR$/css/UI-Edit.css" line="12" />
+    <bookmark url="file://$PROJECT_DIR$/css/UI-Edit.css" line="70" />
+    <bookmark url="file://$PROJECT_DIR$/UI-Edit.js" line="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c49df934-fc4b-42d9-bfb1-0e5c5f462bb6" name="Default Changelist" comment="">
+    <list default="true" id="c49df934-fc4b-42d9-bfb1-0e5c5f462bb6" name="Default Changelist" comment="Delete the whole `chrome.storage.local` layer, (from content_script.js AND background.js)&#10;&#10;# Goal: change how UI-Edit quest current tab's vocabulary list">
+      <change afterPath="$PROJECT_DIR$/UI-Edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/UI-Edit.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/main-favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/main-favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Editing.html" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/background.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/content_script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,10 +28,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI-Editing.html">
+        <entry file="file://$PROJECT_DIR$/UI-Edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="28" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="28" />
+            <state relative-caret-position="267">
+              <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/UI-Edit.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="62" column="17" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UI-Edit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-141">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -31,22 +57,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+            <state relative-caret-position="552">
+              <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/content_script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="78" column="12" lean-forward="true" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+            <state relative-caret-position="336">
+              <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -54,25 +75,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/background.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="384">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>getSelectionInfo</find>
-      <find>localStorage</find>
       <find>save</find>
       <find>saveVocabularyInfo</find>
-      <find>alert</find>
       <find>set</find>
       <find>message</find>
       <find>commands</find>
       <find>get</find>
+      <find>body</find>
+      <find>font-size</find>
+      <find>align</find>
+      <find>localS</find>
+      <find>chrome.storage.local</find>
+      <find>chrome.storage.local.set</find>
+      <find>alert</find>
+      <find>tabs.qie</find>
+      <find>query</find>
+      <find>localStorage</find>
+      <find>local</find>
+      <find>chrome.storage</find>
+      <find>Vocabulary local storage initialized</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -86,8 +129,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/UI-Editing.html" />
+        <option value="$PROJECT_DIR$/Assets/UI-Edit.css" />
+        <option value="$PROJECT_DIR$/Styles/UI-Edit.css" />
+        <option value="$PROJECT_DIR$/manifest.json" />
+        <option value="$PROJECT_DIR$/vendor/jquery/jquery-3.2.1.min.js" />
+        <option value="$PROJECT_DIR$/css/UI-Edit.css" />
+        <option value="$PROJECT_DIR$/UI-Edit.html" />
+        <option value="$PROJECT_DIR$/UI-Edit.js" />
         <option value="$PROJECT_DIR$/background.js" />
         <option value="$PROJECT_DIR$/content_script.js" />
       </list>
@@ -103,10 +152,9 @@
     <option name="directoryName" value="QCzcMtOr" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="344" />
-    <option name="y" value="216" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="y" value="24" />
+    <option name="width" value="960" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -125,7 +173,12 @@
             <path>
               <item name="Vocabulary_Pick" type="b2602c69:ProjectViewProjectNode" />
               <item name="Vocabulary_Pick" type="462c0819:PsiDirectoryNode" />
-              <item name="Assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Vocabulary_Pick" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vocabulary_Pick" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Vocabulary_Pick" type="b2602c69:ProjectViewProjectNode" />
@@ -141,6 +194,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -148,12 +202,12 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Assets" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -181,7 +235,11 @@
       <workItem from="1562074084244" duration="338000" />
       <workItem from="1562074445331" duration="2627000" />
       <workItem from="1562077106393" duration="6847000" />
-      <workItem from="1562314809762" duration="8895000" />
+      <workItem from="1562314809762" duration="10424000" />
+      <workItem from="1562327182781" duration="1175000" />
+      <workItem from="1562328464239" duration="68000" />
+      <workItem from="1562328563170" duration="6485000" />
+      <workItem from="1562774092649" duration="10574000" />
     </task>
     <task id="LOCAL-00001" summary="Add Favicon: /Assets/main-favicon.png&#10;Add popup page: UI-Editing&#10;Add fake background.js&#10;Update manifest.json">
       <created>1562076727856</created>
@@ -239,11 +297,25 @@
       <option name="project" value="LOCAL" />
       <updated>1562322307760</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="make chrome.storage.local public to all tabs">
+      <created>1562324532411</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1562324532411</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Save vocabularyInfo to current tab's localStorage&#10;&#10;Now the selected vocabulary will store a copy to the tab specific localStorage, besides the chrome.storage.local.">
+      <created>1562325694723</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1562325694723</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18707000" />
+    <option name="totallyTimeSpent" value="38538000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -258,8 +330,8 @@
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4959217" visible="true" weight="0.2596154" />
-      <window_info id="Structure" order="1" sideWeight="0.5040783" side_tool="true" visible="true" weight="0.2596154" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7138643" visible="true" weight="0.16185898" />
+      <window_info id="Structure" order="1" sideWeight="0.2861357" side_tool="true" visible="true" weight="0.16185898" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -270,17 +342,18 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946582" weight="0.32932165" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="GraphQL" order="8" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49786323" visible="true" weight="0.32932165" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49626067" weight="0.19037199" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49893162" weight="0.2428884" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5016026" side_tool="true" weight="0.25820568" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5016026" side_tool="true" visible="true" weight="0.25820568" />
       <window_info anchor="bottom" id="Tail" order="12" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49893162" weight="0.25820568" />
+      <window_info active="true" anchor="bottom" id="Messages" order="14" sideWeight="0.49839744" visible="true" weight="0.25820568" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Cargo" order="3" />
-      <window_info anchor="right" id="Key Promoter X" order="4" />
+      <window_info anchor="right" x="0" y="0" width="430" height="856" id="Documentation" order="4" side_tool="true" weight="0.32959402" />
+      <window_info anchor="right" id="Key Promoter X" order="5" weight="0.32959402" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +408,10 @@
     <MESSAGE value="Polish naming in ./content_script.js" />
     <MESSAGE value="save selected vocabulary to chrome.storage.local" />
     <MESSAGE value="delete useless legacy comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete useless legacy comments" />
+    <MESSAGE value="make chrome.storage.local public to all tabs" />
+    <MESSAGE value="Save vocabularyInfo to current tab's localStorage&#10;&#10;Now the selected vocabulary will store a copy to the tab specific localStorage, besides the chrome.storage.local." />
+    <MESSAGE value="Delete the whole `chrome.storage.local` layer, (from content_script.js AND background.js)&#10;&#10;# Goal: change how UI-Edit quest current tab's vocabulary list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete the whole `chrome.storage.local` layer, (from content_script.js AND background.js)&#10;&#10;# Goal: change how UI-Edit quest current tab's vocabulary list" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hello_extensions.png" />
@@ -370,34 +446,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UI-Editing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UI-Edit.css" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/background.js">
+    <entry file="file://$PROJECT_DIR$/fonts/Lato/OFL.txt" />
+    <entry file="file://$PROJECT_DIR$/vendor/animate/animate.css" />
+    <entry file="file://$PROJECT_DIR$/vendor/jquery/jquery-3.2.1.min.js" />
+    <entry file="file://$PROJECT_DIR$/vendor/perfect-scrollbar/perfect-scrollbar.css" />
+    <entry file="file://$PROJECT_DIR$/images/main-favicon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI-Edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        <state relative-caret-position="267">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/UI-Edit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="62" column="17" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        <state relative-caret-position="552">
+          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI-Edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content_script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="78" column="12" lean-forward="true" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+        <state relative-caret-position="336">
+          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
         </state>
       </provider>
     </entry>

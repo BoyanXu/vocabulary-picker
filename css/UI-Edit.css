@@ -1,0 +1,98 @@
+html, body {
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+    /*background: #FDEAC9;*/
+    width: 600px;
+    height: 2000px;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* vocabulary table */
+table {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    font-size: 18px;
+    text-align: left;
+}
+
+table#t01 tr:nth-child(even) {
+    background-color: #FDEAC9;
+}
+
+table#t01 tr:nth-child(odd) {
+    background-color: #FDEAC9;
+}
+
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+
+#vocabulary-table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+}
+
+#vocabulary-table td, #vocabulary-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#vocabulary-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#vocabulary-table tr:hover {
+    background-color: #ddd;
+}
+
+#vocabulary-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* refresh button */
+
+#refresh-button {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 18px;
+    background-color: #4eb5f1;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+#refresh-button:hover {
+    background-color: #4095c6;
+}
+
+@media all and (max-width: 30em) {
+    #refresh-button {
+        display: block;
+        margin: 0.2em auto;
+    }
+}
