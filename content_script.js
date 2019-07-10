@@ -34,7 +34,7 @@ function getSelectedParagraph(anchorNode) {
 }
 
 function getSelectedInfo() {
-    selectedNode = window.getSelection();
+    let selectedNode = window.getSelection(); // TODO: change text background of selectedNode
 
     if (selectedNode.anchorNode == null) {  // handle exception 1: nothing selected
         return null
@@ -46,20 +46,12 @@ function getSelectedInfo() {
     return new vocabularyInfo(selected_vocabulary, selected_sentence, selected_paragraph)
 }
 
-function saveVocabularyInfo(message) {
+function saveVocabularyInfo() {
     let vocabularyInfo = getSelectedInfo();
     alert("Current vocabulary info is : " + vocabularyInfo.vocabulary);
-    if (vocabularyInfo !== null) {
+    if (vocabularyInfo.vocabulary !== "") {
         // var VocabularyList = JSON.parse(localStorage.vocabularyList);
 
-        // Store to local chrome
-        chrome.storage.local.get(['VocabularyList'], (result) => {
-            VocabularyList = result.VocabularyList;
-            alert("latest local storage loaded, which is: " + JSON.stringify(VocabularyList));
-            vocabularyInfo.index = VocabularyList.length;
-            VocabularyList.push(vocabularyInfo);
-            chrome.storage.local.set({'VocabularyList': VocabularyList }, () => { alert("Vocabulary local storage updated, which should be : " + JSON.stringify(VocabularyList)) })
-        });
         // Store to current tab
         vocabularyList4Tab = JSON.parse(localStorage.vocabularyList4Tab);
         vocabularyInfo.index = vocabularyList4Tab.length;
@@ -70,20 +62,17 @@ function saveVocabularyInfo(message) {
 
 function initContentScript() {
     chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-        if (message.action === "save") {
+        if (message.action === "pick") {
             saveVocabularyInfo();
-            return true;
+            sendResponse("SomeResponse")
+        }
+
+        else if (message.action === "display") {
+            sendResponse(vocabularyList4Tab);
         }
     });
 
-    localStorage.vocabularyList4Tab = JSON.stringify([]);
-    try {
-        chrome.storage.local.get(['VocabularyList'],(items) => {
-            alert('Settings retrieved', items);});
-    } catch (eor) {
-        alert(eor);
-        chrome.storage.local.set({'VocabularyList': [] }, () => { alert("Vocabulary local storage initialized") } )
-    }
+    localStorage.setItem("vocabularyList4Tab", "[]");
     // chrome.runtime.sendMessage({'init': true}, onSelection);
 }
 
