@@ -5,11 +5,9 @@
     <bookmark url="file://$PROJECT_DIR$/css/UI-Edit.css" line="70" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c49df934-fc4b-42d9-bfb1-0e5c5f462bb6" name="Default Changelist" comment="UI-Edit.js request current vocabulary list from content_script.js&#10;&#10;# TODO: Fix &quot;UI-Edit.js&quot;.refreshList(), to prevent loss of CSS for vocabulary list">
-      <change afterPath="$PROJECT_DIR$/UI-Edit.js" afterDir="false" />
+    <list default="true" id="c49df934-fc4b-42d9-bfb1-0e5c5f462bb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/background.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/content_script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Edit.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI-Edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="99">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -43,7 +41,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
+            <state relative-caret-position="-59">
               <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
             </state>
           </provider>
@@ -52,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UI-Edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="24" column="84" lean-forward="true" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
+            <state relative-caret-position="72">
+              <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -61,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/background.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
-              <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
+            <state relative-caret-position="336">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -73,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content_script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="432">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -238,7 +236,7 @@
       <workItem from="1562328464239" duration="68000" />
       <workItem from="1562328563170" duration="6485000" />
       <workItem from="1562774092649" duration="18815000" />
-      <workItem from="1562860356793" duration="870000" />
+      <workItem from="1562860356793" duration="1793000" />
     </task>
     <task id="LOCAL-00001" summary="Add Favicon: /Assets/main-favicon.png&#10;Add popup page: UI-Editing&#10;Add fake background.js&#10;Update manifest.json">
       <created>1562076727856</created>
@@ -324,11 +322,32 @@
       <option name="project" value="LOCAL" />
       <updated>1562784788540</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="UI-Edit.js request current vocabulary list from content_script.js&#10;&#10;# TODO: Fix &quot;UI-Edit.js&quot;.refreshList(), to prevent loss of CSS for vocabulary list">
+      <created>1562861230355</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1562861230356</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Delete legacy comments">
+      <created>1562861309466</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1562861309466</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Preserve CSS when refreshList()&#10;&#10;# TODO: bind refreshList() to the &quot;refresh&quot; button">
+      <created>1562861791335</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1562861791335</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47649000" />
+    <option name="totallyTimeSpent" value="48572000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -341,6 +360,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.71091443" visible="true" weight="0.16346154" />
       <window_info id="Structure" order="1" sideWeight="0.28908554" side_tool="true" visible="true" weight="0.16346154" />
@@ -425,7 +445,9 @@
     <MESSAGE value="Delete the whole `chrome.storage.local` layer, (from content_script.js AND background.js)&#10;&#10;# Goal: change how UI-Edit quest current tab's vocabulary list" />
     <MESSAGE value="Beautify the vocabulary table (in UI-Edit.html)" />
     <MESSAGE value="UI-Edit.js request current vocabulary list from content_script.js&#10;&#10;# TODO: Fix &quot;UI-Edit.js&quot;.refreshList(), to prevent loss of CSS for vocabulary list" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI-Edit.js request current vocabulary list from content_script.js&#10;&#10;# TODO: Fix &quot;UI-Edit.js&quot;.refreshList(), to prevent loss of CSS for vocabulary list" />
+    <MESSAGE value="Delete legacy comments" />
+    <MESSAGE value="Preserve CSS when refreshList()&#10;&#10;# TODO: bind refreshList() to the &quot;refresh&quot; button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preserve CSS when refreshList()&#10;&#10;# TODO: bind refreshList() to the &quot;refresh&quot; button" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hello_extensions.png" />
@@ -471,13 +493,6 @@
     <entry file="file://$PROJECT_DIR$/images/main-favicon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/UI-Edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/UI-Edit.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -485,34 +500,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manifest.json">
+    <entry file="file://$PROJECT_DIR$/content_script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        <state relative-caret-position="432">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/background.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
+        <state relative-caret-position="336">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content_script.js">
+    <entry file="file://$PROJECT_DIR$/UI-Edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="99">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-59">
+          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI-Edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="24" column="84" lean-forward="true" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
+        <state relative-caret-position="72">
+          <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
         </state>
       </provider>
     </entry>

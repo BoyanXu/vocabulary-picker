@@ -1,5 +1,7 @@
 function init() {
     refreshList();
+    // let refreshButton = document.getElementById("refresh-button");
+    // refreshButton.addEventListener("click", refreshList);
 }
 
 function refreshList() {
