@@ -66,11 +66,14 @@ function initContentScript() {
             saveVocabularyInfo();
             sendResponse("SomeResponse")
         }
+    });
 
-        else if (message.action === "display") {
-            sendResponse(vocabularyList4Tab);
+    chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+        if (request.from === "UI-Edit.js" && request.to === "content_script.js" && request.on === "tab-vocabulary") {
+            sendResponse({currentList: JSON.parse(localStorage.vocabularyList4Tab)});
         }
     });
+
 
     localStorage.setItem("vocabularyList4Tab", "[]");
     // chrome.runtime.sendMessage({'init': true}, onSelection);

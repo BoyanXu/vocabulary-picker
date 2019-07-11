@@ -12,7 +12,29 @@ function initBackground(){
         })
       } )
     }
-  })
+  });
+
+
+  // chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  //     if (request.from === "UI-Edit.js" && request.to === "background.js" && request.on === "tab-vocabulary"){
+  //         chrome.tabs.query({active: true, currentWindow: true} )
+  //             .then(tabs => chrome.tabs.sendMessage(tabs[0].id, {from: "background.js", to: "content_script.js", on:"tab-vocabulary"}) )
+  //             .then(response => sendResponse({currentList: response.currentList }))
+  //             .catch(failureCallback);
+  //     }
+  //   });
+  //
+  // chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  //         if (request.from === "UI-Edit.js" && request.to === "background.js" && request.on === "tab-vocabulary"){
+  //             chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+  //                 chrome.tabs.sendMessage(tabs[0].id, {from: "background.js", to: "content_script.js", on:"tab-vocabulary"}, (response) =>{
+  //                     alert("background.js receive response: " + JSON.stringify(response.currentList) );
+  //                     sendResponse({currentList: response.currentList });
+  //                 });
+  //             });
+  //         }
+  //         return true; // Damn it
+  // });
 }
 
 initBackground();
