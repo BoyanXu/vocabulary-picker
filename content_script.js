@@ -74,7 +74,6 @@ function initContentScript() {
         }
     });
 
-
     localStorage.setItem("vocabularyList4Tab", "[]");
     // chrome.runtime.sendMessage({'init': true}, onSelection);
 }
