@@ -7,7 +7,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c49df934-fc4b-42d9-bfb1-0e5c5f462bb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/UI-Edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/UI-Edit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI-Edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="264">
+              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -41,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-59">
-              <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+            <state relative-caret-position="757">
+              <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -50,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UI-Edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+            <state relative-caret-position="415">
+              <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -59,11 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/background.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state>
+              <caret column="50" selection-start-column="50" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -71,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content_script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="85">
+              <caret line="56" column="57" lean-forward="true" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -128,12 +128,12 @@
         <option value="$PROJECT_DIR$/UI-Editing.html" />
         <option value="$PROJECT_DIR$/Assets/UI-Edit.css" />
         <option value="$PROJECT_DIR$/Styles/UI-Edit.css" />
-        <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/vendor/jquery/jquery-3.2.1.min.js" />
         <option value="$PROJECT_DIR$/css/UI-Edit.css" />
-        <option value="$PROJECT_DIR$/UI-Edit.html" />
         <option value="$PROJECT_DIR$/background.js" />
+        <option value="$PROJECT_DIR$/UI-Edit.html" />
         <option value="$PROJECT_DIR$/content_script.js" />
+        <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/UI-Edit.js" />
       </list>
     </option>
@@ -236,7 +236,7 @@
       <workItem from="1562328464239" duration="68000" />
       <workItem from="1562328563170" duration="6485000" />
       <workItem from="1562774092649" duration="18815000" />
-      <workItem from="1562860356793" duration="1793000" />
+      <workItem from="1562860356793" duration="8687000" />
     </task>
     <task id="LOCAL-00001" summary="Add Favicon: /Assets/main-favicon.png&#10;Add popup page: UI-Editing&#10;Add fake background.js&#10;Update manifest.json">
       <created>1562076727856</created>
@@ -343,11 +343,25 @@
       <option name="project" value="LOCAL" />
       <updated>1562861791335</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Delete refreshButton&#10;&#10;# TODO: add function: &quot;UI-Edit.js&quot;.export2CSV()">
+      <created>1562863007750</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1562863007750</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Merge two chrome.runtime.onMessage.addListener() into 1">
+      <created>1562864476222</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1562864476222</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48572000" />
+    <option name="totallyTimeSpent" value="55466000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -362,8 +376,8 @@
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.71091443" visible="true" weight="0.16346154" />
-      <window_info id="Structure" order="1" sideWeight="0.28908554" side_tool="true" visible="true" weight="0.16346154" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.71149427" visible="true" weight="0.16346154" />
+      <window_info id="Structure" order="1" sideWeight="0.28850573" side_tool="true" visible="true" weight="0.16346154" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -376,10 +390,10 @@
       <window_info anchor="bottom" id="GraphQL" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49626067" weight="0.19037199" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49893162" weight="0.2428884" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50267094" side_tool="true" visible="true" weight="0.25820568" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50267094" side_tool="true" visible="true" weight="0.048140045" />
       <window_info anchor="bottom" id="Tail" order="12" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
-      <window_info active="true" anchor="bottom" id="Messages" order="14" sideWeight="0.49732906" visible="true" weight="0.25820568" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49732906" visible="true" weight="0.048140045" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -447,7 +461,9 @@
     <MESSAGE value="UI-Edit.js request current vocabulary list from content_script.js&#10;&#10;# TODO: Fix &quot;UI-Edit.js&quot;.refreshList(), to prevent loss of CSS for vocabulary list" />
     <MESSAGE value="Delete legacy comments" />
     <MESSAGE value="Preserve CSS when refreshList()&#10;&#10;# TODO: bind refreshList() to the &quot;refresh&quot; button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preserve CSS when refreshList()&#10;&#10;# TODO: bind refreshList() to the &quot;refresh&quot; button" />
+    <MESSAGE value="Delete refreshButton&#10;&#10;# TODO: add function: &quot;UI-Edit.js&quot;.export2CSV()" />
+    <MESSAGE value="Merge two chrome.runtime.onMessage.addListener() into 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge two chrome.runtime.onMessage.addListener() into 1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hello_extensions.png" />
@@ -493,6 +509,20 @@
     <entry file="file://$PROJECT_DIR$/images/main-favicon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50" selection-start-column="50" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="56" column="57" lean-forward="true" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/UI-Edit.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -500,41 +530,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content_script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/background.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UI-Edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="264">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        <state relative-caret-position="757">
+          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI-Edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+        <state relative-caret-position="415">
+          <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
         </state>
       </provider>
     </entry>

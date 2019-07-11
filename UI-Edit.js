@@ -1,7 +1,6 @@
 function init() {
     refreshList();
-    // let refreshButton = document.getElementById("refresh-button");
-    // refreshButton.addEventListener("click", refreshList);
+    document.getElementById("export-button").addEventListener("click", export2JSON);
 }
 
 function refreshList() {
@@ -12,10 +11,11 @@ function refreshList() {
             on: "tab-vocabulary"
         }, (response) => {
             let vocabularyTable = document.getElementById("vocabulary-table");
-            // Clear old content
+            // Clear legacy vocabulary
             for(let i = 0; i < vocabularyTable.rows.length; i++){
                 vocabularyTable.deleteRow(-1);
             }
+            // Rebuild vocabulary table
             let vocabularyList = response.currentList;
             for (let i = 0; i < vocabularyList.length; i++) {
                 let row = vocabularyTable.insertRow(-1);
@@ -24,9 +24,24 @@ function refreshList() {
                 vocabulary.innerText = vocabularyList[i].vocabulary;
                 sentence.innerText = vocabularyList[i].sentence;
             }
+            // Make vocabulary list exportable
+            let dataUri = 'data:text/json;charset=utf-8,'+ encodeURIComponent(JSON.stringify({vocabulary: vocabularyList}));
+
+            let date = new Date();
+            let exportFileName = date.getMonth() + "\\" + date.getDate() + "\\" + date.getMinutes() + "\\"+ date.getSeconds() + ".json";
+
+            let downloadAnchor = document.createElement('a');
+            downloadAnchor.setAttribute('id', "export-button-download");
+            downloadAnchor.setAttribute('href', dataUri);
+            downloadAnchor.setAttribute('download', exportFileName);
+            document.body.appendChild(downloadAnchor);
         });
     });
+}
 
+function export2JSON(){
+    let downloadAnchor = document.getElementById("export-button-download");
+    downloadAnchor.click();
 }
 
 document.addEventListener('DOMContentLoaded', init);

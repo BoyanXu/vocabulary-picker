@@ -31,7 +31,8 @@
     "<all_urls>",
     "tts",
     "tabs",
-    "storage"
+    "storage",
+    "downloads"
   ],
   "background": {
     "scripts": [
