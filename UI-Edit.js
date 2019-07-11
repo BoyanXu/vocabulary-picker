@@ -21,8 +21,10 @@ function refreshList() {
                 let row = vocabularyTable.insertRow(-1);
                 let vocabulary = row.insertCell(0);
                 let sentence = row.insertCell(1);
-                vocabulary.innerText = vocabularyList[i].vocabulary;
-                sentence.innerText = vocabularyList[i].sentence;
+                vocabulary.innerHTML = vocabularyList[i].vocabulary;
+                // sentence.innerText = vocabularyList[i].sentence;
+                sentence.innerHTML = emphasize(vocabularyList[i].vocabulary, vocabularyList[i].sentence);
+
             }
             // Make vocabulary list exportable
             let dataUri = 'data:text/json;charset=utf-8,'+ encodeURIComponent(JSON.stringify({vocabulary: vocabularyList}));
@@ -42,6 +44,11 @@ function refreshList() {
 function export2JSON(){
     let downloadAnchor = document.getElementById("export-button-download");
     downloadAnchor.click();
+}
+
+function emphasize(vocabulary, sentence){
+    let reExp = new RegExp(vocabulary,"g");
+    return sentence.replace(reExp, "<span class='emphasize'\">" + vocabulary + "</span>")
 }
 
 document.addEventListener('DOMContentLoaded', init);

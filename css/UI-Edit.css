@@ -7,7 +7,7 @@ html, body {
     height: 2000px;
     font-family: Arial, sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 /* vocabulary table */
@@ -25,7 +25,20 @@ table, th, td {
 th, td {
     padding: 15px;
     font-size: 18px;
-    text-align: left;
+    font-family: "Georgia", sans-serif;
+
+}
+
+.table td,
+.table th
+{
+    text-align:center;
+}
+
+.table td + td,
+.table th + th
+{
+    text-align:left;
 }
 
 table#t01 tr:nth-child(even) {
@@ -42,7 +55,7 @@ table#t01 th {
 }
 
 #vocabulary-table {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-family: "Georgia", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 95%;
 }
@@ -63,7 +76,6 @@ table#t01 th {
 #vocabulary-table th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
     background-color: #4CAF50;
     color: white;
 }
@@ -95,4 +107,11 @@ table#t01 th {
         display: block;
         margin: 0.2em auto;
     }
+}
+
+.emphasize{
+    padding-bottom: 0px;
+    border-bottom: 3px solid #ffc81f;
+    border-bottom-color: rgb(255, 200, 31);
+    text-decoration: none;
 }
