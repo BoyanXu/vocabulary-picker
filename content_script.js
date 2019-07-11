@@ -48,25 +48,30 @@ function getSelectedInfo() {
 
 function saveVocabularyInfo() {
     let vocabularyInfo = getSelectedInfo();
-    alert("Current vocabulary info is : " + vocabularyInfo.vocabulary);
-    if (vocabularyInfo.vocabulary !== "") {
-        // var VocabularyList = JSON.parse(localStorage.vocabularyList);
+    if(vocabularyInfo){ // handle exception 1: nothing selected
+        alert("Current vocabulary info is : " + vocabularyInfo.vocabulary);
+        if (vocabularyInfo.vocabulary !== "") {
+            // var VocabularyList = JSON.parse(localStorage.vocabularyList);
 
-        // Store to current tab
-        vocabularyList4Tab = JSON.parse(localStorage.vocabularyList4Tab);
-        vocabularyInfo.index = vocabularyList4Tab.length;
-        vocabularyList4Tab.push(vocabularyInfo);
-        localStorage.vocabularyList4Tab = JSON.stringify(vocabularyList4Tab);
+            // Store to current tab
+            vocabularyList4Tab = JSON.parse(localStorage.vocabularyList4Tab);
+            vocabularyInfo.index = vocabularyList4Tab.length;
+            vocabularyList4Tab.push(vocabularyInfo);
+            localStorage.vocabularyList4Tab = JSON.stringify(vocabularyList4Tab);
+        }
     }
+
 }
 
 function initContentScript() {
+    console.log("Content.js is initialized once");
     chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         if (message.action === "pick") {
             saveVocabularyInfo();
             sendResponse("SomeResponse")
         }
         else if (message.from === "UI-Edit.js" && message.to === "content_script.js" && message.on === "tab-vocabulary") {
+            console.log("List sent: " + localStorage.vocabularyList4Tab );
             sendResponse({currentList: JSON.parse(localStorage.vocabularyList4Tab)});
         }
 

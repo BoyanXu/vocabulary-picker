@@ -11,12 +11,13 @@ function refreshList() {
             on: "tab-vocabulary"
         }, (response) => {
             let vocabularyTable = document.getElementById("vocabulary-table");
+            let vocabularyList = response.currentList;
+
             // Clear legacy vocabulary
             for(let i = 0; i < vocabularyTable.rows.length; i++){
                 vocabularyTable.deleteRow(-1);
             }
             // Rebuild vocabulary table
-            let vocabularyList = response.currentList;
             for (let i = 0; i < vocabularyList.length; i++) {
                 let row = vocabularyTable.insertRow(-1);
                 let vocabulary = row.insertCell(0);
@@ -48,7 +49,7 @@ function export2JSON(){
 
 function emphasize(vocabulary, sentence){
     let reExp = new RegExp(vocabulary,"g");
-    return sentence.replace(reExp, "<span class='emphasize'\">" + vocabulary + "</span>")
+    return sentence.replace(reExp, "<span class='emphasize'>" + vocabulary + "</span>")
 }
 
 document.addEventListener('DOMContentLoaded', init);
