@@ -10,8 +10,10 @@ function refreshList() {
             on: "tab-vocabulary"
         }, (response) => {
             let vocabularyTable = document.getElementById("vocabulary-table");
-            vocabularyTable.innerHTML = "";  // Clear old content
-            alert("UI-Edit.js finally receive response: " + JSON.stringify(response));
+            // Clear old content
+            for(let i = 0; i < vocabularyTable.rows.length; i++){
+                vocabularyTable.deleteRow(-1);
+            }
             let vocabularyList = response.currentList;
             for (let i = 0; i < vocabularyList.length; i++) {
                 let row = vocabularyTable.insertRow(-1);
