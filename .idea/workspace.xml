@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/css/UI-Edit.css" line="12" />
-    <bookmark url="file://$PROJECT_DIR$/css/UI-Edit.css" line="82" />
+    <bookmark url="file://$PROJECT_DIR$/css/UI-Edit.css" line="14" />
+    <bookmark url="file://$PROJECT_DIR$/css/UI-Edit.css" line="84" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c49df934-fc4b-42d9-bfb1-0e5c5f462bb6" name="Default Changelist" comment="">
+    <list default="true" id="c49df934-fc4b-42d9-bfb1-0e5c5f462bb6" name="Default Changelist" comment="Delete vocabulary">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Edit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/content_script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/UI-Edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/UI-Edit.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI-Edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="363">
+              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -34,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/UI-Edit.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="336">
+              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -43,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
+            <state relative-caret-position="75">
               <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
             </state>
           </provider>
@@ -52,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UI-Edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="144">
+              <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -61,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/background.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="288">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -73,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content_script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
-              <caret line="66" column="50" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
+            <state relative-caret-position="405">
+              <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -91,9 +93,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>saveVocabularyInfo</find>
-      <find>set</find>
-      <find>message</find>
       <find>commands</find>
       <find>get</find>
       <find>body</find>
@@ -114,13 +113,16 @@
       <find>localS</find>
       <find>getSelectedInfo</find>
       <find>text-align</find>
-      <find>localStorage</find>
       <find>addEventListener</find>
       <find>dataManage</find>
       <find>click</find>
       <find>origin-index</find>
       <find>setAttribute</find>
       <find>background.js query message to content_script.js</find>
+      <find>localStorage</find>
+      <find>pick</find>
+      <find>List sen</find>
+      <find>clear</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,12 +140,12 @@
         <option value="$PROJECT_DIR$/Assets/UI-Edit.css" />
         <option value="$PROJECT_DIR$/Styles/UI-Edit.css" />
         <option value="$PROJECT_DIR$/vendor/jquery/jquery-3.2.1.min.js" />
-        <option value="$PROJECT_DIR$/content_script.js" />
         <option value="$PROJECT_DIR$/manifest.json" />
-        <option value="$PROJECT_DIR$/css/UI-Edit.css" />
-        <option value="$PROJECT_DIR$/UI-Edit.html" />
         <option value="$PROJECT_DIR$/background.js" />
+        <option value="$PROJECT_DIR$/UI-Edit.html" />
+        <option value="$PROJECT_DIR$/content_script.js" />
         <option value="$PROJECT_DIR$/UI-Edit.js" />
+        <option value="$PROJECT_DIR$/css/UI-Edit.css" />
       </list>
     </option>
   </component>
@@ -247,7 +249,7 @@
       <workItem from="1562774092649" duration="18815000" />
       <workItem from="1562860356793" duration="14748000" />
       <workItem from="1562880112093" duration="4136000" />
-      <workItem from="1562886055741" duration="4399000" />
+      <workItem from="1562886055741" duration="9251000" />
     </task>
     <task id="LOCAL-00001" summary="Add Favicon: /Assets/main-favicon.png&#10;Add popup page: UI-Editing&#10;Add fake background.js&#10;Update manifest.json">
       <created>1562076727856</created>
@@ -389,11 +391,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562880484627</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Click the &quot;vocabulary cell&quot; triggers dataManage()&#10;&#10;&#10;# TODO Alt + Click the &quot;vocabulary cell&quot; triggers DELETE vocabulary">
+      <created>1562890770857</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1562890770857</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70062000" />
+    <option name="totallyTimeSpent" value="74914000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -499,7 +508,9 @@
     <MESSAGE value="Export vocabulary list as .json file &#10;&#10;# TODO: Delete, Modify vocabulary list through UI-Edit" />
     <MESSAGE value="Emphasize vocabulary in sentence&#10;&#10;# TODO: Delete, Modify vocabulary list through UI-Edit" />
     <MESSAGE value="Fix issue caused by &quot;all_frame: true&quot;&#10;&#10;# TODO: Delete, Modify vocabulary list through UI-Edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix issue caused by &quot;all_frame: true&quot;&#10;&#10;# TODO: Delete, Modify vocabulary list through UI-Edit" />
+    <MESSAGE value="Click the &quot;vocabulary cell&quot; triggers dataManage()&#10;&#10;# TODO Alt + Click the &quot;vocabulary cell&quot; triggers DELETE vocabulary" />
+    <MESSAGE value="Click the &quot;vocabulary cell&quot; triggers dataManage()&#10;&#10;&#10;# TODO Alt + Click the &quot;vocabulary cell&quot; triggers DELETE vocabulary" />
+    <option name="LAST_COMMIT_MESSAGE" value="Click the &quot;vocabulary cell&quot; triggers dataManage()&#10;&#10;&#10;# TODO Alt + Click the &quot;vocabulary cell&quot; triggers DELETE vocabulary" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hello_extensions.png" />
@@ -545,48 +556,48 @@
     <entry file="file://$PROJECT_DIR$/images/main-favicon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/UI-Edit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
+        <state relative-caret-position="75">
           <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content_script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="66" column="50" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/background.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="288">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/content_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/UI-Edit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/UI-Edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        <state relative-caret-position="363">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI-Edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="144">
+          <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
         </state>
       </provider>
     </entry>

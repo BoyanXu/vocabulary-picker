@@ -52,10 +52,12 @@ function saveVocabularyInfo() {
         alert("Current vocabulary info is : " + vocabularyInfo.vocabulary);
         if (vocabularyInfo.vocabulary !== "") {
             // var VocabularyList = JSON.parse(localStorage.vocabularyList);
-
             // Store to current tab
             vocabularyList4Tab = JSON.parse(localStorage.vocabularyList4Tab);
-            vocabularyInfo.index = vocabularyList4Tab.length;
+            let currentIndex = parseInt(localStorage.indexFactory);
+            vocabularyInfo.index = currentIndex;
+            localStorage.setItem("indexFactory", currentIndex + 1);
+
             vocabularyList4Tab.push(vocabularyInfo);
             localStorage.vocabularyList4Tab = JSON.stringify(vocabularyList4Tab);
         }
@@ -66,7 +68,7 @@ function saveVocabularyInfo() {
 function initContentScript() {
     console.log("Content.js is initialized once");
     chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-        if (message.action === "pick") {
+        if (message.from === "background.js" && message.to === "content_script.js" && message.on === "pick") {
             saveVocabularyInfo();
             sendResponse("SomeResponse")
         }
@@ -74,10 +76,17 @@ function initContentScript() {
             console.log("List sent: " + localStorage.vocabularyList4Tab );
             sendResponse({currentList: JSON.parse(localStorage.vocabularyList4Tab)});
         }
-
+        else if (message.from === "UI-Edit.js" && message.to === "content_script.js" && message.on === "delete-vocabulary") {
+            var vocabularyList = JSON.parse(localStorage.vocabularyList4Tab);
+            console.log("Index to delete is: " + typeof(message.data) );
+            vocabularyList = vocabularyList.filter(vocabularyInfo => vocabularyInfo.index !== parseInt(message.data) );
+            localStorage.vocabularyList4Tab = JSON.stringify(vocabularyList);
+            sendResponse("Removed")
+        }
     });
 
     localStorage.setItem("vocabularyList4Tab", "[]");
+    localStorage.setItem("indexFactory" , 0);
     // chrome.runtime.sendMessage({'init': true}, onSelection);
 }
 
