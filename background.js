@@ -6,7 +6,6 @@ function initBackground(){
   chrome.commands.onCommand.addListener((command)=>{
     if(command === "pick_word"){
       chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
-        alert("background.js query message to content_script.js");
         chrome.tabs.sendMessage(tabs[0].id, {'action' : 'pick'}, (response) =>{
           // alert("background.js received response")
         })

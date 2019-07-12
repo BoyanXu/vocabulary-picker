@@ -22,9 +22,14 @@ function refreshList() {
                 let row = vocabularyTable.insertRow(-1);
                 let vocabulary = row.insertCell(0);
                 let sentence = row.insertCell(1);
-                vocabulary.innerHTML = vocabularyList[i].vocabulary;
-                // sentence.innerText = vocabularyList[i].sentence;
+
+                vocabulary.setAttribute("originIndex", vocabularyList[i].index );
+                vocabulary.innerHTML = "<span class='vocabulary-display'>" + vocabularyList[i].vocabulary + "</span>";
+                vocabulary.firstElementChild.setAttribute("originIndex", vocabularyList[i].index );
                 sentence.innerHTML = emphasize(vocabularyList[i].vocabulary, vocabularyList[i].sentence);
+                // Bind delete operation to vocabulary
+                vocabulary.addEventListener("click", dataManage)
+
 
             }
             // Make vocabulary list exportable
@@ -50,6 +55,13 @@ function export2JSON(){
 function emphasize(vocabulary, sentence){
     let reExp = new RegExp(vocabulary,"g");
     return sentence.replace(reExp, "<span class='emphasize'>" + vocabulary + "</span>")
+}
+
+function dataManage(event){
+    // Delete
+    if (event.altKey){
+        console.log(event.target);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', init);

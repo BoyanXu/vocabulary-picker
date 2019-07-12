@@ -62,7 +62,7 @@ table#t01 th {
 
 #vocabulary-table td, #vocabulary-table th {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 16px;
 }
 
 #vocabulary-table tr:nth-child(even) {
@@ -114,4 +114,8 @@ table#t01 th {
     border-bottom: 3px solid #ffc81f;
     border-bottom-color: rgb(255, 200, 31);
     text-decoration: none;
+}
+
+.vocabulary-display{
+    font-weight: bold;
 }
