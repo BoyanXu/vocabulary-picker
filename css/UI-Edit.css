@@ -32,15 +32,13 @@ th, td {
 }
 
 .table td,
-.table th
-{
-    text-align:center;
+.table th {
+    text-align: center;
 }
 
 .table td + td,
-.table th + th
-{
-    text-align:left;
+.table th + th {
+    text-align: left;
 }
 
 table#t01 tr:nth-child(even) {
@@ -111,13 +109,13 @@ table#t01 th {
     }
 }
 
-.emphasize{
+.emphasize {
     padding-bottom: 0px;
     border-bottom: 3px solid #ffc81f;
     border-bottom-color: rgb(255, 200, 31);
     text-decoration: none;
 }
 
-.vocabulary-display{
+.vocabulary-display {
     font-weight: bold;
 }

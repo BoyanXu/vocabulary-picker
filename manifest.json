@@ -1,6 +1,6 @@
 {
   "name": "Vocabulary Picker",
-  "description" : "Pick challenging and elegant vocabulary while reading",
+  "description": "Pick challenging and elegant vocabulary while reading",
   "version": "1.0",
   "browser_action": {
     "default_popup": "UI-Edit.html",
@@ -16,16 +16,13 @@
       },
       "description": "Opens editing UI"
     },
-
-    "pick_word":{
-      "suggested_key":{
+    "pick_word": {
+      "suggested_key": {
         "default": "Ctrl+Shift+Q",
         "mac": "MacCtrl+Shift+Q"
       },
       "description": "Select word in current page"
     }
-
-
   },
   "permissions": [
     "<all_urls>",
@@ -39,7 +36,6 @@
       "background.js"
     ]
   },
-
   "content_scripts": [
     {
       "matches": [
@@ -51,5 +47,4 @@
       ]
     }
   ]
-
 }

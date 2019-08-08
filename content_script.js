@@ -1,8 +1,9 @@
 class vocabularyInfo {
-    constructor(selected_vocabulary, selected_sentence, selected_paragraph) {
+    constructor(selected_vocabulary, selected_sentence, selected_paragraph, selected_url) {
         this.vocabulary = selected_vocabulary;
         this.sentence = selected_sentence;
         this.paragraph = selected_paragraph;
+        this.url = selected_url;
     }
 }
 
@@ -33,6 +34,10 @@ function getSelectedParagraph(anchorNode) {
     return ""
 }
 
+function getSelectedURL(){
+    return window.location.toString();
+}
+
 function getSelectedInfo() {
     let selectedNode = window.getSelection(); // TODO: change text background of selectedNode
 
@@ -43,12 +48,13 @@ function getSelectedInfo() {
     let selected_vocabulary = getSelectedVocabulary(selectedNode);
     let selected_paragraph = getSelectedParagraph(selectedNode.anchorNode);
     let selected_sentence = getSelectedSentence(selected_paragraph, selected_vocabulary);
-    return new vocabularyInfo(selected_vocabulary, selected_sentence, selected_paragraph)
+    let selected_url = getSelectedURL();
+    return new vocabularyInfo(selected_vocabulary, selected_sentence, selected_paragraph, selected_url);
 }
 
 function saveVocabularyInfo() {
     let vocabularyInfo = getSelectedInfo();
-    if(vocabularyInfo){ // handle exception 1: nothing selected
+    if (vocabularyInfo) { // handle exception 1: nothing selected
         alert("Current vocabulary info is : " + vocabularyInfo.vocabulary);
         if (vocabularyInfo.vocabulary !== "") {
             // var VocabularyList = JSON.parse(localStorage.vocabularyList);
@@ -71,22 +77,20 @@ function initContentScript() {
         if (message.from === "background.js" && message.to === "content_script.js" && message.on === "pick") {
             saveVocabularyInfo();
             sendResponse("SomeResponse")
-        }
-        else if (message.from === "UI-Edit.js" && message.to === "content_script.js" && message.on === "tab-vocabulary") {
-            console.log("List sent: " + localStorage.vocabularyList4Tab );
+        } else if (message.from === "UI-Edit.js" && message.to === "content_script.js" && message.on === "tab-vocabulary") {
+            console.log("List sent: " + localStorage.vocabularyList4Tab);
             sendResponse({currentList: JSON.parse(localStorage.vocabularyList4Tab)});
-        }
-        else if (message.from === "UI-Edit.js" && message.to === "content_script.js" && message.on === "delete-vocabulary") {
+        } else if (message.from === "UI-Edit.js" && message.to === "content_script.js" && message.on === "delete-vocabulary") {
             var vocabularyList = JSON.parse(localStorage.vocabularyList4Tab);
-            console.log("Index to delete is: " + typeof(message.data) );
-            vocabularyList = vocabularyList.filter(vocabularyInfo => vocabularyInfo.index !== parseInt(message.data) );
+            console.log("Index to delete is: " + typeof (message.data));
+            vocabularyList = vocabularyList.filter(vocabularyInfo => vocabularyInfo.index !== parseInt(message.data));
             localStorage.vocabularyList4Tab = JSON.stringify(vocabularyList);
             sendResponse("Removed")
         }
     });
 
     localStorage.setItem("vocabularyList4Tab", "[]");
-    localStorage.setItem("indexFactory" , 0);
+    localStorage.setItem("indexFactory", 0);
     // chrome.runtime.sendMessage({'init': true}, onSelection);
 }
 
