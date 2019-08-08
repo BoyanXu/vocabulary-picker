@@ -6,13 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c49df934-fc4b-42d9-bfb1-0e5c5f462bb6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Edit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/background.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/content_script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/UI-Edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/UI-Edit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,7 +41,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
+            <state relative-caret-position="888">
               <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
             </state>
           </provider>
@@ -55,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UI-Edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+            <state relative-caret-position="143">
+              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -76,7 +71,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content_script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-501">
+            <state relative-caret-position="1320">
               <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
             </state>
           </provider>
@@ -143,10 +138,10 @@
         <option value="$PROJECT_DIR$/vendor/jquery/jquery-3.2.1.min.js" />
         <option value="$PROJECT_DIR$/UI-Edit.html" />
         <option value="$PROJECT_DIR$/background.js" />
-        <option value="$PROJECT_DIR$/UI-Edit.js" />
         <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/css/UI-Edit.css" />
         <option value="$PROJECT_DIR$/content_script.js" />
+        <option value="$PROJECT_DIR$/UI-Edit.js" />
       </list>
     </option>
   </component>
@@ -170,6 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,7 +181,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,7 +241,8 @@
       <workItem from="1563101593145" duration="1399000" />
       <workItem from="1563178226408" duration="643000" />
       <workItem from="1563193464779" duration="129000" />
-      <workItem from="1565283503029" duration="872000" />
+      <workItem from="1565283503029" duration="1148000" />
+      <workItem from="1565287068320" duration="554000" />
     </task>
     <task id="LOCAL-00001" summary="Add Favicon: /Assets/main-favicon.png&#10;Add popup page: UI-Editing&#10;Add fake background.js&#10;Update manifest.json">
       <created>1562076727856</created>
@@ -402,11 +398,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562895335910</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Implement GET url of selected word's page.">
+      <created>1565284626811</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1565284626811</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80903000" />
+    <option name="totallyTimeSpent" value="81733000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,8 +424,8 @@
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.69864863" visible="true" weight="0.17948718" />
-      <window_info id="Structure" order="1" sideWeight="0.30135134" side_tool="true" visible="true" weight="0.17948718" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6972973" visible="true" weight="0.18162394" />
+      <window_info id="Structure" order="1" sideWeight="0.3027027" side_tool="true" visible="true" weight="0.18162394" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -525,7 +528,8 @@
     <MESSAGE value="Click the &quot;vocabulary cell&quot; triggers dataManage()&#10;&#10;# TODO Alt + Click the &quot;vocabulary cell&quot; triggers DELETE vocabulary" />
     <MESSAGE value="Click the &quot;vocabulary cell&quot; triggers dataManage()&#10;&#10;&#10;# TODO Alt + Click the &quot;vocabulary cell&quot; triggers DELETE vocabulary" />
     <MESSAGE value="Delete vocabulary from vocabulary list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete vocabulary from vocabulary list" />
+    <MESSAGE value="Implement GET url of selected word's page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement GET url of selected word's page." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hello_extensions.png" />
@@ -576,6 +580,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/background.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -586,24 +597,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content_script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-501">
+        <state relative-caret-position="1320">
           <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI-Edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+        <state relative-caret-position="143">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
         </state>
       </provider>
     </entry>

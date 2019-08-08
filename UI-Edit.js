@@ -32,7 +32,12 @@ function refreshList() {
                 vocabulary.addEventListener("click", dataManage)
             }
             // Make vocabulary list exportable
-            let dataUri = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify({vocabulary: vocabularyList}));
+            let dataUri = 'data:text/json;charset=utf-8,' + encodeURIComponent(
+                JSON.stringify({vocabulary: vocabularyList.map( vocabularyObj => {
+                    delete vocabularyObj.index;
+                    return vocabularyObj;
+                })})
+            );
 
             let date = new Date();
             let exportFileName = date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate() + "-" + date.getHours() + "-" + date.getMinutes() + "-" + date.getSeconds() + ".json";
