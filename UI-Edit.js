@@ -34,13 +34,16 @@ function refreshList() {
             // Make vocabulary list exportable
             let dataUri = 'data:text/json;charset=utf-8,' + encodeURIComponent(
                 JSON.stringify({vocabulary: vocabularyList.map( vocabularyObj => {
+                    let date = new Date();
+                    vocabularyObj.time = date.getFullYear() + "/" + date.getMonth() + "/" + date.getDate();
+                    vocabularyObj.tags = '';
                     delete vocabularyObj.index;
                     return vocabularyObj;
                 })})
             );
 
             let date = new Date();
-            let exportFileName = date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate() + "-" + date.getHours() + "-" + date.getMinutes() + "-" + date.getSeconds() + ".json";
+            let exportFileName = date.getFullYear() + "-" + (date.getMonth() + 1).toString() + "-" + date.getDate() + "-" + date.getHours() + "-" + date.getMinutes() + "-" + date.getSeconds() + ".json";
 
             let downloadAnchor = document.createElement('a');
             downloadAnchor.setAttribute('id', "export-button-download");

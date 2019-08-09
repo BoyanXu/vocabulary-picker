@@ -4,6 +4,7 @@ class vocabularyInfo {
         this.sentence = selected_sentence;
         this.paragraph = selected_paragraph;
         this.url = selected_url;
+        this.vocabularyOrign = selected_vocabulary;
     }
 }
 
