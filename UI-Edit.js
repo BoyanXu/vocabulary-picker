@@ -34,10 +34,11 @@ function refreshList() {
             // Make vocabulary list exportable
             let dataUri = 'data:text/json;charset=utf-8,' + encodeURIComponent(
                 JSON.stringify({vocabulary: vocabularyList.map( vocabularyObj => {
-                    let date = new Date();
-                    vocabularyObj.time = date.getFullYear() + "/" + date.getMonth() + "/" + date.getDate();
-                    vocabularyObj.tags = '';
                     delete vocabularyObj.index;
+                    vocabularyObj.vocabulary = vocabularyObj.vocabulary.toLowerCase();
+                    vocabularyObj.time = getPickDateStr();
+                    vocabularyObj.tags = '';
+                    vocabularyObj.key = '';
                     return vocabularyObj;
                 })})
             );
@@ -62,6 +63,20 @@ function export2JSON() {
 function emphasize(vocabulary, sentence) {
     let reExp = new RegExp(vocabulary, "g");
     return sentence.replace(reExp, "<span class='emphasize'>" + vocabulary + "</span>")
+}
+
+function getPickDateStr(){
+    let date = new Date();
+
+    let numMon = date.getMonth() + 1;
+    let numDay = date.getDate();
+
+    let strDay = (numDay < 10) ? "0" + numDay.toString() : numDay.toString();
+    let strMon = (numMon < 10) ? "0" + numMon.toString() : numMon.toString();
+    let strYear = date.getFullYear().toString();
+
+    return strYear + "-" + strMon + "-" + strDay;
+    // date.getFullYear() + "/" + date.getMonth() + "/" + date.getDate();
 }
 
 function dataManage(event) {
