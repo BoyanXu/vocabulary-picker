@@ -5,10 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/css/UI-Edit.css" line="82" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c49df934-fc4b-42d9-bfb1-0e5c5f462bb6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Edit.js" afterDir="false" />
-    </list>
+    <list default="true" id="c49df934-fc4b-42d9-bfb1-0e5c5f462bb6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -47,11 +44,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI-Edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="77" column="48" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="48" />
+            <state relative-caret-position="-161">
+              <caret line="78" column="73" lean-forward="true" selection-start-line="78" selection-start-column="73" selection-end-line="78" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -236,7 +245,7 @@
       <workItem from="1565287068320" duration="8093000" />
       <workItem from="1565406277771" duration="3951000" />
       <workItem from="1565619339719" duration="615000" />
-      <workItem from="1565674148227" duration="682000" />
+      <workItem from="1565674148227" duration="715000" />
     </task>
     <task id="LOCAL-00001" summary="Add Favicon: /Assets/main-favicon.png&#10;Add popup page: UI-Editing&#10;Add fake background.js&#10;Update manifest.json">
       <created>1562076727856</created>
@@ -413,11 +422,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565342160069</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Update export JSON format">
+      <created>1565713879036</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1565713879036</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94520000" />
+    <option name="totallyTimeSpent" value="94553000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -430,6 +446,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.69324327" visible="true" weight="0.18803419" />
       <window_info id="Structure" order="1" sideWeight="0.30675676" side_tool="true" visible="true" weight="0.18803419" />
@@ -613,8 +630,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UI-Edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="77" column="48" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="48" />
+        <state relative-caret-position="-161">
+          <caret line="78" column="73" lean-forward="true" selection-start-line="78" selection-start-column="73" selection-end-line="78" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
