@@ -5,9 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/css/UI-Edit.css" line="82" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c49df934-fc4b-42d9-bfb1-0e5c5f462bb6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c49df934-fc4b-42d9-bfb1-0e5c5f462bb6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -251,7 +249,7 @@
       <workItem from="1565406277771" duration="3951000" />
       <workItem from="1565619339719" duration="615000" />
       <workItem from="1565674148227" duration="1145000" />
-      <workItem from="1565758500020" duration="1275000" />
+      <workItem from="1565758500020" duration="1503000" />
     </task>
     <task id="LOCAL-00001" summary="Add Favicon: /Assets/main-favicon.png&#10;Add popup page: UI-Editing&#10;Add fake background.js&#10;Update manifest.json">
       <created>1562076727856</created>
@@ -442,11 +440,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565713939455</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Update README.md">
+      <created>1565760639868</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1565760639868</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96258000" />
+    <option name="totallyTimeSpent" value="96486000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -459,10 +464,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.69072163" visible="true" weight="0.19017094" />
-      <window_info id="Structure" order="1" sideWeight="0.30927834" side_tool="true" visible="true" weight="0.19017094" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6890034" visible="true" weight="0.19017094" />
+      <window_info id="Structure" order="1" sideWeight="0.31099656" side_tool="true" visible="true" weight="0.19017094" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
