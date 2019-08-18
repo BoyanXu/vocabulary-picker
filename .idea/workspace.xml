@@ -6,7 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c49df934-fc4b-42d9-bfb1-0e5c5f462bb6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README-zh-cn.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README-zh-tr.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,11 +40,53 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content_script.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
               <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="384">
+                <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-end-line="17" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README-zh-cn.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="240">
+                <caret line="10" lean-forward="true" selection-end-line="116" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README-zh-tr.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="2712">
+                <caret line="113" column="36" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="36" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -147,6 +192,8 @@
         <option value="$PROJECT_DIR$/css/UI-Edit.css" />
         <option value="$PROJECT_DIR$/UI-Edit.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/README-zh-cn.md" />
+        <option value="$PROJECT_DIR$/README-zh-tr.md" />
       </list>
     </option>
   </component>
@@ -201,8 +248,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/Assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -254,7 +301,8 @@
       <workItem from="1565674148227" duration="1145000" />
       <workItem from="1565758500020" duration="1503000" />
       <workItem from="1566033927000" duration="1545000" />
-      <workItem from="1566054692766" duration="1166000" />
+      <workItem from="1566054692766" duration="1630000" />
+      <workItem from="1566115546316" duration="499000" />
     </task>
     <task id="LOCAL-00001" summary="Add Favicon: /Assets/main-favicon.png&#10;Add popup page: UI-Editing&#10;Add fake background.js&#10;Update manifest.json">
       <created>1562076727856</created>
@@ -473,11 +521,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566034480322</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Update README.md">
+      <created>1566110642740</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1566110642740</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99905000" />
+    <option name="totallyTimeSpent" value="100868000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -492,8 +547,8 @@
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.68613136" visible="true" weight="0.19444445" />
-      <window_info id="Structure" order="1" sideWeight="0.3138686" side_tool="true" visible="true" weight="0.19444445" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.68396944" visible="true" weight="0.1965812" />
+      <window_info id="Structure" order="1" sideWeight="0.31603053" side_tool="true" visible="true" weight="0.1965812" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -504,8 +559,8 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946582" weight="0.32932165" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="GraphQL" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.63995725" weight="0.284153" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49732906" visible="true" weight="0.25054705" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.63995725" visible="true" weight="0.2833698" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49732906" weight="0.25054705" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.36004272" side_tool="true" weight="0.27978143" />
       <window_info anchor="bottom" id="Tail" order="12" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
@@ -622,9 +677,9 @@
     <MESSAGE value="Implement GET url of selected word's page." />
     <MESSAGE value="Implement DELETE index while export vocabularies" />
     <MESSAGE value="Update export JSON format" />
-    <MESSAGE value="Update README.md" />
     <MESSAGE value="Update icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update icon" />
+    <MESSAGE value="Update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hello_extensions.png" />
@@ -662,18 +717,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="45" selection-start-column="45" selection-end-column="45" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/READEME.md" />
+    <entry file="file://$PROJECT_DIR$/Vocabulary Picker Manual.md" />
     <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -685,6 +730,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -702,6 +754,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/main-favicon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/background.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -712,13 +767,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/main-favicon.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="384">
+            <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-end-line="17" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content_script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+    <entry file="file://$PROJECT_DIR$/README-zh-cn.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="240">
+            <caret line="10" lean-forward="true" selection-end-line="116" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README-zh-tr.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="2712">
+            <caret line="113" column="36" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="36" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
