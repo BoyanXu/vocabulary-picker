@@ -94,9 +94,9 @@ Vocabulary Picker 兼容部分优化网页排版的插件，如 [Clearly](https:
 
 <br/>
 
-### [Words Discoverer](https://chrome.google.com/webstore/detail/words-discoverer-expand-y/noncaeikjgpbdeoocblijjgegnobogib)
+### [单词发现者](https://chrome.google.com/webstore/detail/words-discoverer-expand-y/noncaeikjgpbdeoocblijjgegnobogib?hl=zh-CN)
 
-> 高亮当前网页内不常见的短语和惯用语，帮助英语学习者扩大自己的词汇量。
+> 突出显示网页上罕见的英语字典词汇和惯用语。促进英语语言学习并扩大词汇量。
 
 <br/>
 
