@@ -98,6 +98,15 @@ There are two brilliant extensions I strongly recommend use Vocabulary Picker to
 >Just one click, enjoy your reading.
 
 
+## Contributors
+
+@Ge Gao designed the icon for Vocabulary Picker.
+
+@Zhengyuan is main tester of the Vocabulary Picker.
+
+@Boyan Xu designed the architecture of Vocabulary Picker and implemented it.
+
+
 
 <br/>
 <br/>
@@ -191,4 +200,16 @@ Vocabulary Picker 兼容部分优化网页排版的插件，如 [Clearly](https:
 ### [Clearly](https://chrome.google.com/webstore/detail/clearly/odfonlkabodgbolnmmkdijkaeggofoop)
 
 > 单击图标，享受阅读。
+
+
+
+## 贡献者
+
+
+@高歌 为 Vocabulary Picker 设计了图标。
+
+@正源 是 Vocabulary Picker 的主要测试者.
+
+@Boyan 设计并实现了 Vocabulary Picker 的架构。
+
 
