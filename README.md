@@ -2,8 +2,10 @@
   <img src="https://i.imgur.com/cLjMml3.png">
 </p>
 
-# Vocabulary Picker 
+<br/>
+<br/>
 
+# Vocabulary Picker 
 
 
 Vocabulary Picker is a chrome extension designed for English learner that help you collect vocabularies and its context (namely, the sentence and paragraph wrapping it, and the URL pointing to the current page).
