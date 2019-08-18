@@ -1,8 +1,6 @@
-
-
-![](https://i.imgur.com/cLjMml3.png)
-
-
+<p align="center">
+  <img src="https://i.imgur.com/cLjMml3.png">
+</p>
 
 # Vocabulary Picker 
 
