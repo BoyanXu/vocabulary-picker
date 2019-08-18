@@ -30,18 +30,10 @@ After successfully picked a vocabulary, chrome will alert you with:`Current voca
 
 
 
-![](https://i.imgur.com/fo8ORWC.gif)
-
-
-
-
 
 ## Preview the List
 
 To preview the list of picked vocabulary, **click** the icon of vocabulary picker on the extension bar, after which the list will pop up.
-
-![preview](https://i.imgur.com/RZdU6fb.gif)
-
 
 
 ## Delete from List
