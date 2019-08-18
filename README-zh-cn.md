@@ -18,6 +18,8 @@ Vocabulary Picker 导出的词汇表，可以立即拖入 [Vocabulary Manager](h
 
 _Read this page in other languages：_ [English](https://github.com/BoyanXu/vocabulary-picker/blob/master/README.md), [简体中文](https://github.com/BoyanXu/vocabulary-picker/blob/master/README-zh-cn.md), [繁體中文](https://github.com/BoyanXu/vocabulary-picker/blob/master/README-zh-tr.md)
 
+![](https://i.imgur.com/WV7MEnt.png)
+
 <br/>
 
 ## 安装

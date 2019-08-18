@@ -16,9 +16,7 @@ Check the Video Tutorial for more help: https://www.youtube.com/watch?v=zhhA5mQW
 
 _Read this page in other languages：_ [English](https://github.com/BoyanXu/vocabulary-picker/blob/master/README.md), [简体中文](https://github.com/BoyanXu/vocabulary-picker/blob/master/README-zh-cn.md), [繁體中文](https://github.com/BoyanXu/vocabulary-picker/blob/master/README-zh-tr.md)
 
-<p align="center">
-  <img src="https://i.imgur.com/mUyDspm.png">
-</p>
+![](https://i.imgur.com/WV7MEnt.png)
 
 ## Install
 
