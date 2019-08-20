@@ -30,7 +30,7 @@ _Read this page in other languages：_ [English](https://github.com/BoyanXu/voca
 
 ## 摘取词汇
 
-想要摘取一个你感兴趣的词汇，先用**鼠标**选中该词汇，再同时**按下**  `ctrl` + `shift` (Win/ Linux) 或者 `⇧` + `⌃` (Mac)。
+想要摘取一个你感兴趣的词汇，先用**鼠标**选中该词汇，再同时**按下**  `ctrl` + `shift`  + `Q` (Win/ Linux) 或者 `⇧` + `⌃` + `Q`  (Mac)。
 
 摘取成功时，chrome 会弹出提示如下：`Current vocabulary info is : THE_VOCABULARY_YOU_PICKED。**按下** ENTER 键以确认。
 
