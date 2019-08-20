@@ -26,7 +26,7 @@ Follow instruction on: https://github.com/BoyanXu/vocabulary-picker/releases
 
 ## Pick Vocabulary
 
-To pick a vocabulary that interested you,  **select** that vocabulary with your cursor, then **press** `ctrl` + `shift` (Win/ Linux) or `⇧` + `⌃` (Mac).
+To pick a vocabulary that interested you,  **select** that vocabulary with your cursor, then **press** `ctrl` + `shift` + `Q` (Win/ Linux) or `⇧` + `⌃` + `Q` (Mac).
 
 After successfully picked a vocabulary, chrome will alert you with:`Current vocabulary info is : THE_VOCABULARY_YOU_PICKED`. **Press** `enter` to confirm.
 <br/>
